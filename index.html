@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- 
+đây là mã khai báo cho trình duyệt biết rằng bạn đag sử dụng phiên bảo nào của Html
+-->
+<html lang="vi">
+  <!--
+   dùng để định nghĩa phần thân tài liêu html
+   thuộc tính lang dùng để chỉ ngôn ngữ đc viết của website 
+   (search "ma ngon ngu" trên gg để tìm cách mã ngôn ngữ cần sử dụng)
+  -->
+  <head>
+    <!--  
+    được dùng để chứa các thông tin trang web
+    mà ko dc hiển thị trực tiếp trên trình duyệt ng dùng 
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tự học lập trình</title>
+  </head>
+  <body>
+    <!-- 
+    dùng để chứa các thành phần chính của trang web
+    . bao gồm :
+    văn bản, hình ảnh, đoạn mã JavaScirpt, các phần tử định dạng, v.v
+    . bên cạch đó nò cũng bao gồm nhiều dạng thẻ :
+    thẻ h, p, b, i, u, a, img, ul, ol 
+    - có thể search "mdn" để tìm hiểu các loại mã
+     -->
+    <h1><i>Sown</i>: Tự học lập trình</h1>
+    <p>
+      Đường link FB:<a href="https://www.facebook.com/sdra.akasiki/about"
+        >Link FB NHS
+      </a>
+    </p>
+    <hr />
+
+    <h2>I, một số mẹo lập trình</h2>
+    <!-- 
+    vào emmet > cheat sheet : để xem các mẹo dùng thẻ
+    -->
+    <!-- 
+    bên cạch đó, sử dụng "Shift + Alt + mũi tên xuống " để copy nhanh dòng bên trên
+    -->
+    <h3>1,mẹo dùng chuột</h3>
+    <ul>
+      <!-- 
+      "ul: unordered list" là thẻ dùng để tạo danh sách ko có số thứ tự
+      -->
+      <li>
+        giữ <b><i>"Alt"</i></b> và click con trỏ chuột tại các dòng cần để tạo
+        thêm <b><i>"dấu dạch chuột"</i></b> cho các dòng cần chỉnh sửa để cùng
+        lúc chỉnh sửa nhiều dòng code
+      </li>
+      <br />
+      <li>
+        đồng thời cx có thể giữ <b><i> "Alt" </i></b> và bôi đen các nội dung
+        cần thiết ở nhiều dòng code khác nhau cùng 1 lúc
+      </li>
+      <br />
+      <li>
+        bôi đen nội dung cần thêm thẻ sau đó nhấn <b><i> "Alt + W"</i></b> để
+        thêm thẻ nhanh chóng cho nội dung
+      </li>
+    </ul>
+    <h3>2, mẹo dùng thẻ</h3>
+    <ul>
+      <li>
+        <a href="https://docs.emmet.io/cheat-sheet/" target="_blank"
+          >emmet (cheat-sheet)</a
+        >
+        <br />
+        <a href="https://docs.emmet.io/cheat-sheet/" target="_blank"
+          ><img
+            src="./img/Screenshot 2025-09-18 102156.png"
+            alt="trang chủ emmet: cheat_sheet"
+            width="700"
+        /></a>
+      </li>
+    </ul>
+
+    <h2>II, các loại thẻ cần lưu ý</h2>
+    <ol>
+      <!-- 
+      "ol: ordered list" là thẻ dùng để tạo danh sách có đánh số thứ tự
+      -->
+      <li>
+        thẻ <b>< br >: break</b> dùng để xuống dòng (thường dùng để xuống dòng
+        cho thơ trg cùng 1 đoạn) <br />
+        vd: xuống dòng trg đoạn <b>< p ></b>
+      </li>
+      <br />
+      <li>
+        thẻ <b>< hr >: horizontal rule</b> dùng để kẻ một
+        <i> "đường ngang" </i> ngăn cách trên trang
+      </li>
+      <br />
+      <li>
+        thẻ <b> < img >: image - hình ành</b> dùng để chèn hình ảnh vào trang
+        web <br />
+        <ul>
+          <li>
+            - thuộc tính <i>width</i> và <i>height</i> dùng để căn chỉnh cao
+            rộng của hình ảnh <br />
+            - chỉ set cao hoặc rộng, ảnh sẽ tự căn tỷ lệ
+          </li>
+          <li>
+            set % cho width sẽ giúp ảnh căn theo % ảnh ban đầu <br />
+            vd: width: "50%"
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <!-- 
+    2 thuộc tính thông dụng cho thẻ ol:
+    - reversed : để đảo ngược thứ tự
+    - type : để đổi cách đánh số thứ tự (vd : a,b,c)
+    -->
+    <h2>III, Học về cách sử dụng Github</h2>
+    <ol>
+      <li>
+        <b>Terminal </b><br />
+        <ol type="a">
+          <li>
+            các dòng code cần thiết cho Terminal: <br />
+
+            <img
+              src="./img/Screenshot_20-9-2025_132144_github.com.jpeg"
+              width="700"
+            />
+          </li>
+          <li>
+            Các bước đầu khởi tạo bằng Terminal và đẩy code lên kho trên git:
+            <br />
+            <ul>
+              <li><b>"git init"</b> để bắt đầu khởi tạo</li>
+              <li>
+                - <b>"git add ."</b> để thêm toàn bộ folder vào phần tracker của
+                Terminal <br />
+                - hoặc <b>"git add ten_thu_muc/"</b> để add thư lục lẻ, riêng
+                biệt
+              </li>
+              <li>
+                <b>"git status"</b> để kiểm tra lại trạng thái cho thư mục đã
+                hoặc chx đc track
+              </li>
+              <li>
+                <b>"git commit -m "first commit"" </b>để commit, code đẩy vào
+                local repo và chờ push lên github
+              </li>
+              <li>
+                <b>"git branch -M main"</b> để đổi chủ ngữ từ
+                <i>master</i> thành <i>main</i>
+              </li>
+              <li>
+                <b>
+                  "git remote add origin
+                  https://github.com/ten_tai_khoan_gihub/ten_thu_muc/.git"
+                </b>
+                để remote đến máy chủ git
+              </li>
+              <li>
+                <b> "git push -u origin main" </b> để push code lên máy chủ git
+                <br />
+                <i>
+                  * sau đó lên trang chủ git nhấn F5 để ktra việc code đã đc đẩy
+                  lên hay chx
+                </i>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li></li>
+      <li></li>
+    </ol>
+
+    <h2>IV, Bài tập ôn luyện</h2>
+    <!-- 
+    lên web "diffchecker"- web chuyên so sánh code,
+    để trợ giúp trog vc thực hành sủ dụng code khi so sánh với code mẫu
+    -->
+    <ul>
+      <li>
+        trình so sánh code:
+        <a href="https://www.diffchecker.com/" target="_blank">diffchecker</a>
+      </li>
+    </ul>
+    <h3>1, bài tập 1</h3>
+    <ul>
+      <li>học về các thẻ head</li>
+      <br />
+      <li>thực hành sử dụng các thẻ head sao cho hiển thị đúng ý trên web</li>
+    </ul>
+    <h3>2, bài tập 2</h3>
+    <ul>
+      <li>
+        ôn tập chèn ảnh: <br />
+        <img
+          src="https://th.bing.com/th/id/OIP.iWg3utN36X5HoHrt8fxt1AHaEJ?"
+          width="700"
+          alt="ảnh gundam.tu-hoc-lap-trinh"
+        />
+      </li>
+    </ul>
+    <hr />
+    <a href="/">Return on Top</a>
+  </body>
+</html>
